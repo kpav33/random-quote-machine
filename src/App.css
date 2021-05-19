@@ -22,7 +22,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-/*|| WRAPPER*/
+/* || WRAPPER*/
 #wrapper {
   background: var(--primary);
   transition: var(--transition-background);

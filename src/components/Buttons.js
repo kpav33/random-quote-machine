@@ -2,11 +2,13 @@ import React, { useContext } from "react";
 import { Context } from "../Context";
 
 function Buttons() {
+  // Get desired values from Context with object destructuring
   const { previousQuote } = useContext(Context);
   const { setClick } = useContext(Context);
   const { quote } = useContext(Context);
   const { author } = useContext(Context);
 
+  // Link that enables sharing the quote and its author over Twitter
   const twitterLink = `https://twitter.com/intent/tweet?text=${encodeURIComponent(
     `"${quote}" - ${author}`
   )}`;

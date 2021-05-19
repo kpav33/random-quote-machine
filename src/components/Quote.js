@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Context } from "../Context";
 
 function Quote() {
+  // Get desired values from Context with object destructuring
   const { quote } = useContext(Context);
   const { author } = useContext(Context);
 
