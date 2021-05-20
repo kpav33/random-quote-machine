@@ -1,17 +1,12 @@
 import "./App.css";
-
 import React from "react";
 
-import Quote from "./components/Quote";
-import Buttons from "./components/Buttons.js";
+import QuoteBox from "./components/QuoteBox";
 
 function App() {
   return (
     <div id="wrapper">
-      <div id="quote-box">
-        <Quote />
-        <Buttons />
-      </div>
+      <QuoteBox />
     </div>
   );
 }

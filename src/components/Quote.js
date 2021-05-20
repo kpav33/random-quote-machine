@@ -3,11 +3,11 @@ import { Context } from "../Context";
 
 function Quote() {
   // Get desired values from Context with object destructuring
-  const { quote } = useContext(Context);
-  const { author } = useContext(Context);
+  const { quote, author } = useContext(Context);
 
   return (
     <>
+      {/* Keys are added so that the CSS animation works correctly */}
       <p id="text" key={Math.random()}>
         <i className="ri-double-quotes-l"></i>
         {quote}
